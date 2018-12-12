@@ -1,0 +1,125 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+/*
+nav ul a,
+nav .brand-logo {
+}
+.nav-wrapper{
+  background: orange;
+  
+}
+.card-image{
+  width: 260px;
+  height: 260px;
+}
+
+.centra{
+  width: 1150px;
+  background: #eee;
+  margin: auto;
+
+
+}
+.container{
+  background: #202020;
+  width: 1800px;
+  height: 1200px
+  color: white;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+
+}
+.colum1{
+  width: 400px;
+  color: white;
+  
+
+}
+.colum1 h1{
+
+  font-size: 22px;
+ 
+}
+.colum1 h1{
+   color: #C7C7C7; 
+
+}
+.colum2{
+  color: white;
+  font-size: 22px;
+  width: 400px; 
+
+  
+}
+
+.colum3{
+  color: white;
+  width: 400px;
+ 
+}
+
+#cajota{
+   margin:auto;
+   width: 800px;
+   padding: 50px;
+   background: #eee;
+
+
+
+
+/*
+
+.sidenav-trigger {
+  color: #26a69a;
+
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+
+}
+  .parallax-container .section {
+    width: 100%;
+
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+
+  }
+  #index-banner .section {
+    top: 10%;
+
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+
+}
+.icon-block .material-icons {
+  font-size: inherit;
+
+}/*
+
+
+
+

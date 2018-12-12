@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block titulo %}
+	Lista Accesorios
+{% endblock %}
+{% block contenido %}
+	<h2 class="center-align">
+		<p class="blue-text">Accesorios Disponibles</p>
+	</h2>
+	
+	<div class="centra">
+	<div class="row">
+	{% for p in lista %}
+	
+		<div class="col s2 m3">
+			<div class="card">
+				<div class="card-image">
+					<img src="/media/{{p.imagen}}">
+			
+				</div>
+				<div class="card-action">
+						
+					<a href="{% url 'vista_ver_accesorio' id_prod=p.id %}" class="btn btn-success">Ver Detalles</a>	
+				
+				</div>		
+			</div>		
+		</div>		
+
+	{% endfor %}
+	</div>
+	</div>	 
+  	<br>
+{% endblock %}

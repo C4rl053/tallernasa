@@ -1,0 +1,20 @@
+<!--{% extends "base.html" %}
+{% block titulo %}
+	login
+{% endblock %}
+{% block contenido %}
+	
+<div id="cajota">
+	<h2>{{ msj }}</h2>
+	<h3 class="center">Inicio de Sesion</h3>
+	<form action="" method="POST">
+		{% csrf_token %}
+		{{ formulario.as_p }}
+		<input type="submit" class="btn btn-success" value="Login">
+		<br>
+
+		
+	</form>
+{% endblock %}
+		
+		

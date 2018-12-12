@@ -1,0 +1,60 @@
+{% extends "base.html "%}
+{% load staticfiles %}
+{% block titulo %}
+	about acerca de:
+{% endblock titulo %}
+{% block contenido %}
+
+<body>
+  <div id="agrupar">
+    <section id="seccion">
+      <article>
+        <header>
+          <hgroup>
+            <h1>Mas Informacion acerca del Taller</h1>
+          <p>Nuestro Taller y Almacen Nasa se encuentra ubicado al nor-oriente del departamento del cauca-municipio de Caldono Resguardo indigena de Pueblo Nuevo, cuenta con una amplia variedad de Repuestos y accesorios para su moto. Ademas de eso tambien ofrecemos el servicio de Soldadura electrica para mesas de tallar cabuya entre otros servicios</p>
+          
+        </header>
+    
+        <figure class="rigth">
+          <img src="/static/imagenes/casataller.jpg" width="530px" height="380px">
+        <figcaption>
+          foto tomada por un cliente
+        </figcaption>
+        </figure>
+
+        <footer>
+          <p>comentarios</p>
+        </footer>
+
+      </article>
+
+      <article>
+        <header>
+          <hgroup>
+            <h2>Otros servicios</h2>
+            <li>Soldadura</li>
+            <li>Vulcanizadora</li>
+               <figure class="rigth">
+                  <img src="/static/imagenes/soldadura.jpg" width="530px" height="380px">
+                <figcaption>
+                foto tomada por un cliente
+                </figcaption>
+                </figure>
+          </hgroup>
+        </header>
+        <footer>
+          <p>comentarios</p>
+        </footer>
+        
+      </article>
+      
+    </section>
+    <aside id="columna">
+      <blockquote>mensaje uno</blockquote>
+      <blockquote>mensaje numero dos</blockquote>
+    </aside>
+      
+  </div>
+</body>
+{% endblock %}

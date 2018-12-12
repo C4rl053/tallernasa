@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block titulo %}
+
+	Contacto Taller Nasa
+{% endblock titulo %}
+{% block contenido %}
+
+<div id="agrupar">
+    <section id="seccion">
+		
+	<h3 class="center">Taller Nasa</h3>
+	<h5 class="center">Contactenos</h5>
+	{% if info_enviado %}
+		
+		{{ email }}
+		{{ title }}
+		{{ text }}
+	{% else %}
+	{% endif %}
+	<form action="" method="POST">
+		{% csrf_token %}
+		{{ formulario.as_p }}
+		<br>
+		<input type="submit" class="btn btn-success" name="Enviar">
+		<br>
+		<br>
+	</section>
+</div>
+		
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block titulo %}
+	{{ p.nombre }}
+{% endblock %}
+{% block contenido %}
+
+<div id="agrupar">
+<div id="seccion">
+	<h1>Detalles</h1>
+	<img src="/media/{{p.imagen}}" width="250px">
+	<p><b>Nombre:</b> {{ p.nombre }} </p>
+	<p><b>Descripcion:</b> {{ p.descripcion }} </p>
+	<p><b>Status:</b> {{ p.status }} unidades</p>
+	<p><b>Precio:</b> $ {{ p.precio }} </p>
+	<p><b>Stock:</b> {{ p.stock }} unidades</p>
+	<p><b>Catalogo:</b> {{ p.catalogo }} </p>
+	<p><b>Marca:</b> {{ p.marca }} </p>
+
+	{% for c in categorias %}
+		<span class="label label-info">{{ c.nombre }} </span>
+	{% endfor %}
+	{% if p.categorias.all %}
+		<h2>Categorias</h2>
+		{% for pc in categorias.all %}
+			{{pc}}
+		{% endfor %}
+{% else %}
+{% endif %}
+	<br>
+	<a href="{% url 'vista_lista_accesorio'%}" class="btn btn-success">Regresar a la Lista</a>
+	<br>
+</div>
+</div>
+<br>
+{% endblock %}
